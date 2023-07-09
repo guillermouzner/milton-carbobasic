@@ -25,7 +25,7 @@ export function UserAuthForm({className, ...props}: UserAuthFormProps) {
           setIsGoogleLoading(true);
           signIn("google", {
             redirect: false,
-            callbackUrl: searchParams?.get("from") || "/dashboard",
+            callbackUrl: searchParams?.get("from") || "/admin",
           });
         }}
       >
