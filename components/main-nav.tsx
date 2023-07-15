@@ -17,6 +17,7 @@ interface MainNavProps {
 
 export function MainNav({items, children}: MainNavProps) {
   const segment = useSelectedLayoutSegment();
+  const cleanedSegment = segment!.replace(/\(|\)/g, "");
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
 
   return (
@@ -47,7 +48,13 @@ export function MainNav({items, children}: MainNavProps) {
         onClick={() => setShowMobileMenu(!showMobileMenu)}
       >
         {showMobileMenu ? <Icons.close /> : <Icons.logo />}
-        <span className="font-bold">Menu</span>
+        <span className="font-bold capitalize">
+          {cleanedSegment === "home"
+            ? "Carbobasic"
+            : cleanedSegment === "dashboard"
+            ? "Blog"
+            : cleanedSegment}
+        </span>
       </button>
       {showMobileMenu && items && <MobileNav items={items}>{children}</MobileNav>}
     </div>

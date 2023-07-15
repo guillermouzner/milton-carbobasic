@@ -16,11 +16,11 @@ export default function PortfolioPage() {
     <div className="flex flex-col gap-10">
       <div className="flex flex-col justify-center items-center gap-5 font-medium">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="relative cursor-pointer w-72 h-72">
+          <div className="relative cursor-pointer w-56 md:w-72 h-56 md:h-72">
             <Image
               priority
               alt="industries"
-              className="object-cover w-full h-full rounded-xl grayscale transition duration-300 ease-in-out hover:grayscale-0"
+              className="object-cover w-full h-full rounded-xl"
               height={288}
               src="/industries.png"
               width={288}
@@ -30,10 +30,10 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="relative cursor-pointer w-72 h-72">
+          <div className="relative cursor-pointer w-56 md:w-72 h-56 md:h-72">
             <Image
               alt="projects"
-              className="object-cover w-full h-full rounded-xl grayscale transition duration-300 ease-in-out hover:grayscale-0"
+              className="object-cover w-full h-full rounded-xl"
               height={300}
               src="/projects.png"
               width={300}
@@ -43,10 +43,10 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="relative cursor-pointer w-72 h-72">
+          <div className="relative cursor-pointer w-56 md:w-72 h-56 md:h-72">
             <Image
               alt="services"
-              className="object-cover w-full h-full rounded-xl grayscale transition duration-300 ease-in-out hover:grayscale-0"
+              className="object-cover w-full h-full rounded-xl"
               height={300}
               src="/services.png"
               width={300}
@@ -56,10 +56,10 @@ export default function PortfolioPage() {
             </p>
           </div>
 
-          <div className="relative cursor-pointer w-72 h-72">
+          <div className="relative cursor-pointer w-56 md:w-72 h-56 md:h-72">
             <Image
               alt="expertise"
-              className="object-cover w-full h-full rounded-xl grayscale transition duration-300 ease-in-out hover:grayscale-0"
+              className="object-cover w-full h-full rounded-xl"
               height={300}
               src="/expertise.png"
               width={300}
@@ -112,11 +112,11 @@ export default function PortfolioPage() {
           />
         </div>
 
-        <div className="flex flex-col md:flex-row py-1 px-8 text-xs items-center gap-3">
+        <div className="flex flex-col lg:flex-row py-1 px-8 text-xs items-center gap-3">
           <p className="text-green-600 text-2xl font-bold">
             MILTON <span className="text-blue-900">AVILA</span>
           </p>
-          <div className="flex whitespace-nowrap flex-row gap-3 font-light">
+          <div className="flex whitespace-nowrap flex-col md:flex-row gap-3 font-light">
             <p
               className={cn(
                 "px-4 py-1 rounded-lg border cursor-pointer bg-background font-semibold transition duration-500 ease-in-out hover:bg-green-600 hover:border-blue-900",

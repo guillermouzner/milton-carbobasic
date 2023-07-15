@@ -28,13 +28,13 @@ export default function AboutPage() {
           <div className="flex flex-row gap-4">
             <Image
               alt="mision"
-              className="w-32 h-32 object-contain"
+              className="w-32 h-32 object-contain hidden sm:flex"
               height={128}
               src="/ourmision.png"
               style={{aspectRatio: "1"}}
               width={128}
             />
-            <div className="flex flex-col gap-2 m-4">
+            <div className="flex flex-col gap-2 m-1 sm:m-4">
               <p className="text-2xl font-black text-green-600">Our Mission</p>
               <p>
                 To provide engineering solutions of excellence to companies around the world in the
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </div>
 
           <div className="flex flex-row gap-4">
-            <div className="flex flex-col gap-2 m-4">
+            <div className="flex flex-col gap-2 m-1 sm:m-4">
               <p className="text-2xl font-black text-green-600">Our Vision</p>
               <p>
                 To be leaders in providing engineering solutions of excellence around the world and
@@ -53,7 +53,7 @@ export default function AboutPage() {
             </div>
             <Image
               alt="mision"
-              className="h-32 w-32 object-contain"
+              className="w-32 h-32 object-contain hidden sm:flex"
               height={128}
               src="/ourvision.png"
               style={{aspectRatio: "1"}}
@@ -64,13 +64,13 @@ export default function AboutPage() {
           <div className="flex flex-row gap-4">
             <Image
               alt="values"
-              className="h-32 w-32 object-contain"
+              className="w-32 h-32 object-contain hidden sm:flex"
               height={128}
               src="/ourvalues.png"
               style={{aspectRatio: "1"}}
               width={128}
             />
-            <div className="flex flex-col gap-2 m-4">
+            <div className="flex flex-col gap-2 m-1 sm:m-4">
               <p className="text-2xl font-black text-green-600">Our Values</p>
               <p>
                 Carbobasic is inspired by the respect to all the stakeholders in a project we
@@ -88,7 +88,7 @@ export default function AboutPage() {
           <p>Meet Me</p>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 items-center">
+        <div className="flex flex-col lg:flex-row gap-6 items-center">
           <Image alt="milton" className="rounded-xl" height={384} src="/milton.webp" width={384} />
           <div className="flex flex-col gap-3">
             <p className="text-2xl font-black text-green-600">Who I am?</p>
