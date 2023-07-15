@@ -17,7 +17,10 @@ interface MainNavProps {
 
 export function MainNav({items, children}: MainNavProps) {
   const segment = useSelectedLayoutSegment();
-  const cleanedSegment = segment!.replace(/\(|\)/g, "");
+
+  // console.log(segment);
+
+  const cleanedSegment = segment ? segment.replace(/\(|\)/g, "") : "admin";
   const [showMobileMenu, setShowMobileMenu] = React.useState<boolean>(false);
 
   return (

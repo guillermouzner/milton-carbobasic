@@ -34,7 +34,7 @@ export default async function PostPage({params}: PostPageProps) {
     <div className="container flex flex-col items-center justify-between gap-10 py-8">
       <div className="flex w-full items-center justify-between">
         <div className="flex items-center">
-          <Link className={cn(buttonVariants({variant: "ghost"}))} href="/dashboard">
+          <Link className={cn(buttonVariants({variant: "ghost"}))} href="/blog">
             <>
               <Icons.chevronLeft className="mr-2 h-4 w-4" />
               Back
