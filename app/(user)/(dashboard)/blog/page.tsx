@@ -5,9 +5,6 @@ import {EmptyPlaceholder} from "@/components/empty-placeholder";
 
 export default async function DashboardPage() {
   const posts = await db.post.findMany({
-    where: {
-      authorId: "cljm39x0m0000ubf0zrr63l9v",
-    },
     select: {
       id: true,
       title: true,
