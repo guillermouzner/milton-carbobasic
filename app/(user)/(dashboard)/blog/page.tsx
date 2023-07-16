@@ -16,13 +16,15 @@ export default async function DashboardPage() {
     },
   });
 
+  // console.log(posts);
+
   return (
     <div>
       <div>
         {posts?.length ? (
           <div className="divide-y divide-border rounded-md border">
             {posts.map((post) => (
-              <PostItem key={post.id + "xx"} post={post} />
+              <PostItem key={post.id} post={post} />
             ))}
           </div>
         ) : (
