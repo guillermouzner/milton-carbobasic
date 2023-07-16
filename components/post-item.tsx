@@ -17,7 +17,7 @@ export function PostItem({post}: PostItemProps) {
             {post.title}
           </Link>
           <p className="text-sm text-muted-foreground">
-            {formatDate(post.createdAt?.toDateString())}
+            {/* {formatDate(post.createdAt?.toDateString())} */}
           </p>
         </div>
       </div>

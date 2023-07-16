@@ -11,8 +11,6 @@ import {cn} from "@/lib/utils";
 import {buttonVariants} from "@/components/ui/button";
 
 async function getPostForUser(postId: Post["id"], userId: string = "cljm39x0m0000ubf0zrr63l9v") {
-  //console.log(userId);
-
   return await db.post.findFirst({
     where: {
       id: postId,

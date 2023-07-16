@@ -11,13 +11,6 @@ const postCreateSchema = z.object({
 
 export async function GET() {
   try {
-    const session = await getServerSession(authOptions);
-
-    if (!session) {
-      return new Response("Unauthorized", {status: 403});
-    }
-
-    const {user} = session;
     const posts = await db.post.findMany({
       select: {
         id: true,
@@ -26,7 +19,7 @@ export async function GET() {
         createdAt: true,
       },
       where: {
-        authorId: user.id,
+        authorId: "cljm39x0m0000ubf0zrr63l9v",
       },
     });
 
