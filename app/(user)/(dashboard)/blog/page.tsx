@@ -16,7 +16,7 @@ export default async function DashboardPage() {
     },
   });
 
-  // console.log(posts);
+  console.log(posts);
 
   return (
     <div>
